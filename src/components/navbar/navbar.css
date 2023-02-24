@@ -1,0 +1,97 @@
+.container.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header .nav-btn{
+    background:transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    visibility: none;
+    outline: none;
+    opacity: 0;
+}
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.logo-anchor{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+.nav__container li{
+    margin:0 50px;
+    
+}
+.nav__container li a{
+    font-size: 23px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin: 10px 10px;
+    padding: 15px 20px;
+    line-height: 30px;
+}
+.nav__container li a:hover{
+    font-size: 25px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(233, 233, 233, 0.636);
+    transition: .3s;
+
+}
+.nav__container li a.active{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color:rgba(233, 233, 233, 0.636);
+    border-radius: 30px;
+    
+}
+
+@media screen and (max-width:1300px) {
+    .container.nav-container{
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: column;
+        background-color: rgb(74, 74, 74);
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        row-gap: 3rem;
+        padding: 2rem;
+        display: none;
+        transform: translateY(-100%);
+        transition: 1s;
+    }
+    header .responsive_nav{
+        transform: none;
+    }
+    header .nav-btn{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .nav-close-btn{
+        color: white;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+    }
+    .nav__container a{
+        color: white;
+    }
+    
+}

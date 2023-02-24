@@ -1,0 +1,35 @@
+.container.footer__container{
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-footer{
+    display: flex;
+}
+.container.footer__container h3{
+    color: white;
+    padding:0 1.5rem;
+}
+.footer-img{
+    width: 1.5rem;
+
+}
+
+@media screen and (max-width:1000px){
+    .container.footer__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:700px){
+    .footer-img{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .container.footer__container{
+        font-size: .8rem;
+    }
+}

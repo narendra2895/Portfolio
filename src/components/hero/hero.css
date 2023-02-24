@@ -1,0 +1,117 @@
+.container.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 50px;
+}
+.container.hero-container h3{
+    font-size: 1.5rem;
+}
+.container.hero-container h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.hero-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4em;
+}
+
+.hover-container1 {
+    width: 30rem;
+    height:40rem;
+    /* border: 2px solid red; */
+    margin: 0 3rem;
+    position: relative;
+    /* background-color: red; */
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+    perspective: 800px;
+   
+
+}
+.hover-container1 .front,.front2,.back1,.back2{
+    padding: 3rem;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.hover-container1:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.front{
+    background-image: url('../../assets/designer.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-size: contain;
+    position: absolute;
+    
+    
+}
+.back1{
+    background  : url(../../assets/info1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-size: contain;
+    position: absolute;  
+    transform: rotateY(180deg);
+}
+.back2{
+    background  : url(../../assets/info2.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-size: contain;
+    position: absolute;  
+    transform: rotateY(180deg);
+}
+
+.front2{
+    background: url('../../assets/coder.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-size: contain;
+    position: absolute;    
+}
+.socials{
+    margin-top: 2rem;
+    padding: 10px 20px;
+}
+
+
+.socials .socials-icon{
+    margin: 0 2rem;
+}
+
+@media screen and (max-width:1680px) {
+        .front,.back1,.front2,.back2{
+            display: none;
+        }
+
+
+    
+}
+@media screen and (max-width:758px){
+    .ME-image img{
+        width: 80vw;
+    }
+    
+    .container.hero-container h3,h1{
+        text-align: center;
+    }
+    .socials{
+    display: none;
+    
+    }
+   .hover-container1{
+    display: none;
+   }
+}
