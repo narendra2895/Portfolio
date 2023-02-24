@@ -101,6 +101,10 @@
     
 }
 @media screen and (max-width:758px){
+    .hero-images{
+        justify-content: center;
+        align-items: center;
+    }
     .ME-image img{
         width: 80vw;
     }
