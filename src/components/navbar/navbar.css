@@ -25,6 +25,7 @@ header .nav-btn{
     position: fixed;
     top: 10px;
     left: 20px;
+    z-index: 100;
 }
 .nav__container li{
     margin:0 50px;
