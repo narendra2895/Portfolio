@@ -21,13 +21,12 @@ header .nav-btn{
     padding-top: 10px;
     padding-bottom: 30px;
 }
-.logo-div{
-    z-index: 1000;
-}
+
 .logo-anchor{
     position: fixed;
     top: 10px;
     left: 20px;
+    z-index: 1000;
     
 }
 .nav__container li{
