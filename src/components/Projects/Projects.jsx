@@ -17,7 +17,7 @@ const Projects = () => {
           <img src={PJ1} className="PJ1" alt="" />
           <p>My Portfolio website using<br />
             HTML, CSS, JS and react.</p>
-            <a>See Project</a>
+            <a href='https://github.com/narendra2895/Portfolio' target={'_blank'}>See Project</a>
         </div>
         <div className="card">
           <h3 className="side-carets"> <BsCode className='side-carets-icon' size={32} /></h3>
