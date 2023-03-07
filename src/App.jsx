@@ -6,6 +6,7 @@ import Skills from './components/Skills/skills'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Parallax from './components/parallax-skills/parallax'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
     <Hero/>
     <About/>
     <Skills/>
+    {/* <Parallax/> */}
     <Projects/>
     <Contact/>
     <Footer/>
