@@ -24,7 +24,7 @@ const Projects = () => {
           <img src={PJ2} className="PJ2" alt="" />
           <p>SocietyPro website using<br />
             HTML, CSS, JS,Python and Django.</p>
-            <a href='https://github.com/narendra2895/societypro'>See Project</a>
+            <a href='https://github.com/narendra2895/societypro' target={'_blank'} >See Project</a>
         </div>
         <div className="card">
           <h3 className="side-carets"> <BsCode className='side-carets-icon' size={32} /></h3>
